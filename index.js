@@ -1,8 +1,8 @@
 const frameworks = [
-	{id: 1,	title: 'Angular', img: 'https://images.app.goo.gl/E8YQS7yZRzfKeLdB7'},
-	{id: 2, title: 'React', img: 'https://images.app.goo.gl/mqnwsvEesz6iATZG9'},
-	{id: 3, title: 'Vue', img: 'https://images.app.goo.gl/8rHb1ia2KWNtckTR9'},
-	{id: 4, title: 'Svelte', img: 'https://images.app.goo.gl/Z56YW9sdu2mhNMoW9'}
+	{id: 1,	title: 'Angular', img: 'https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg'},
+	{id: 2, title: 'React', img: 'https://techythought.com/wp-content/uploads/2020/09/ReactNative.png'},
+	{id: 3, title: 'Vue', img: 'https://cdn2.auth0.com/blog/vuejs/logo.png'},
+	{id: 4, title: 'Svelte', img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Svelte_Logo.svg/499px-Svelte_Logo.svg.png'}
 ]
 
 const modal = $.modal({
@@ -13,9 +13,11 @@ const modal = $.modal({
 	footerButtons: [
 		{text: 'OK', type: 'primary', handler() {
 			console.log('primary clicked')
+			modal.close()
 		}},
 		{text: 'Cancel', type: 'danger', handler() {
 			console.log('danger clicked')
+			modal.close()
 		}}
 	]
 })

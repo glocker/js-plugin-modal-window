@@ -14,10 +14,10 @@ function _createModalFooter(buttons = []) {
 
 	buttons.forEach(btn => {
 		const $btn = document.createElement('button')
-		$btn.textContent = btn.textContent
+		$btn.textContent = btn.text
 		$btn.classList.add('btn')
 		$btn.classList.add(`btn-${btn.type || 'secondary'}`)
-		$btn.onClick = btn.handler || noop
+		$btn.onclick = btn.handler || noop
 
 		wrap.appendChild($btn)
 	})
@@ -46,8 +46,8 @@ function _createModal(options) {
 
 		`)
 	const footer = _createModalFooter(options.footerButtons)
-	footer.appendAfter(modal.body)
-	document.body.appendChild(modal.querySelector('[data-content]'))
+	footer.appendAfter(modal.querySelector('[data-content]'))
+	document.body.appendChild(modal)
 	return modal
 }
 
