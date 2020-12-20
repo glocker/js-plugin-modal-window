@@ -1,3 +1,8 @@
+.col {
+	display: flex;
+	justify-content: space-between;
+}
+
 .modal-wrapper {
 	height: 100%;
 }
