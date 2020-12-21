@@ -7,6 +7,6 @@ Own shadow DOM.
 <h3>Functionality:</h3>
 <ul>
   <li>You can get info about popular JavaScript frameworks</li>
-  <li>Possible to <strong>make framework upopular</strong></li>
+  <li>Possible <strong>to make framework unpopular</strong></li>
 </ul>
 
